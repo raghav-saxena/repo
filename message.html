@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/stylecopy.css" rel="stylesheet">
+<style>
+.sidenav {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+.sidenav a {
+  padding: 6px 6px 6px 6px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#myText1{
+border: #0ba1c7 2px solid;  
+right: 0;
+top: 50%;
+left: 75%;
+transform: translate(-50%, -50%);
+position: absolute;
+cursor: pointer;
+display: block;
+width: 40%;
+padding: 50px 0;
+text-align: center;
+background-color: white;
+color: black;
+}
+.h1{
+right: 0;
+top: 25%;
+left: 75%;
+transform: translate(-50%, -50%);
+position: absolute;
+display: block;
+width: 40%;
+padding: 50px 0;
+text-align: center;
+background-color: white;
+color: black;
+
+}
+</style>
+</head>
+<body>
+<div class="sidenav">
+<a><img src="img/stay-home-stay-safe.jpeg" alt="Snow" style="width:100%;border:2px solid black;cursor:pointer" onclick="Msg1()"></a>
+</div>
+<div>
+<h1 class="h1";>Message From Us</h1>  
+<p id="myText1"></p>
+</div>
+<br>
+<script type="text/javascript">
+function Msg1(){
+document.getElementById('myText1').innerHTML = "The first thing we want to explain that this project is developed for helping citizens.<br> because nowadays the situation is out of control.<br> Almost all countries announced that there is no vaccine available for COVID-19. We developed this project to give you the knowledge, facts, about COVID-19, and some inspiration to prevent this disease.<br>We would want to say that Stay home and stay safe.";
+}
+</script>   
+</body>
+</html> 
